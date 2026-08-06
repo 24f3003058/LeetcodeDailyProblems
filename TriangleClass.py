@@ -5,7 +5,7 @@ class Triangle:
         self.z=c 
     
     def Is_valid(self):
-        if (self.x +self.y > self.z and self.x +self.z > self.y and self.y +self.z > self.x):
+        if (self.x + self.y > self.z and self.x +self.z > self.y and self.y +self.z > self.x):
             return "Valid"
         else:
             return "Invalid"
@@ -40,3 +40,11 @@ class Triangle:
         else:
             return "Invalid"
   
+a=int(input())
+b=int(input())
+c=int(input())
+T=Triangle(a,b,c)
+print(T.Is_valid())
+print(T.Side_Classification())
+print(T.Area())
+print(T.Angle_Classification())
