@@ -14,3 +14,4 @@ def Twin_Primes(n,m):
                 result.append((num,num+2))
                 
     return result
+ 
