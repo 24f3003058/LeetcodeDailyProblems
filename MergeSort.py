@@ -15,13 +15,13 @@ def merge(L1,L2):
         i += 1
     while j< n:
         new_L.append(L2[j])
-        j+=1
+        j+=1 
     return new_L
 def merge_sort(L):
     l= len(L)
     if l <= 1:
         return L
-    left=merge_sort(L[:l//2])
+    left=merge_sort(L[:(l//2)])
     right=merge_sort(L[(l//2):])
     final_L=merge(left,right)
 
